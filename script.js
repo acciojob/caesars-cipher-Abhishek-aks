@@ -34,7 +34,12 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-
+	for (let i = 0; i < str.length; i++) {
+		if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90){
+		decodedArr=lookup.str[i];
+		}
+		decodedArr+=str[i];
+	}
   return; //return decodedArr
 }
 
